@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rsunugan-argconstraint"
+version = "0.1.0"
+description = "按参数的类型、范围与互斥关系校验调用，标出违反项"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "rsunugan" }]
+keywords = ["analysis", "observability", "evaluation", "rag"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://rsunugan.github.io"
+Repository = "https://github.com/rsunugan/argconstraint"
+Issues = "https://github.com/rsunugan/argconstraint/issues"
+
+[project.scripts]
+argconstraint = "argconstraint:main"
+
+[tool.setuptools]
+py-modules = ["argconstraint"]
